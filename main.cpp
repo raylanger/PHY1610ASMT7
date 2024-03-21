@@ -1,3 +1,7 @@
+/* Code for PHY1610 ASMT7. Note: Code assumes data is stored in a directory gwdata, where gwdata is in the same directory
+as the executable. If instead the data is stored in the same directory as the executable, then "gwdata/" must be removed 
+from the declarations of filename_predict and string_setup.  */
+
 #include "main.h"
 
 using namespace netCDF;

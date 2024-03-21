@@ -1,4 +1,4 @@
-#include "init.h"
+#include "read_file.h"
 using namespace netCDF;
 
 rvector<std::complex<double>> read_file(std::string filename){

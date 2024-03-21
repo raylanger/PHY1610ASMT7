@@ -1,4 +1,4 @@
-#include "init.h"
+#include "read_file.h"
 #include <iostream>
 using namespace netCDF;
 

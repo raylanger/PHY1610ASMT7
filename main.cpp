@@ -2,6 +2,7 @@
 #include "FFT.h"
 #include "power.h"
 #include "corr.h"
+#include "output.h"
 #include <iostream>
 #include <sstream>
 #include <iomanip>
@@ -58,7 +59,7 @@ int main(){
         corr_matrix[i][1] = positions[i];
     }
 
-    std::cout << corr_matrix << "\n";
+    output(corr_matrix, "output.txt");
     return 0;
 }
 

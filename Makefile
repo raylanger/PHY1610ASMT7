@@ -6,7 +6,7 @@ all: ASMT7
 ASMT7: main.o read_file.o FFT.o power.o corr.o output.o
 	$(CXX) $(LDFLAGS) -o $@ $^ -lnetcdf -lnetcdf_c++4 -lfftw3
 
-main.o: main.cpp read_file.h FFT.h power.h corr.h output.h
+main.o: main.cpp main.h read_file.h FFT.h power.h corr.h output.h 
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c -o $@ $< 
 
 read_file.o: read_file.cpp read_file.h
